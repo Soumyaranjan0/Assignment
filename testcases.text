@@ -1,0 +1,15 @@
+POST /users: Create a new user.
+
+Body: {"username": "john", "email": "john@example.com", "password": "password123"}
+POST /login: Login the user.
+
+Body: {"email": "john@example.com", "password": "password123"}
+GET /products: List products with pagination.
+
+Query Params: page=1&limit=5
+POST /products: Create a product (admin only).
+
+Body: {"name": "Laptop", "description": "A high-performance laptop", "price": 1200, "stock": 20}
+POST /orders: Create an order.
+
+Body: {"userId": "userId", "products": [{"product": "productId", "quantity": 2}]}
