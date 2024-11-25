@@ -1,9 +1,9 @@
 POST /users: Create a new user.
-
 Body: {"username": "john", "email": "john@example.com", "password": "password123"}
-POST /login: Login the user.
 
+POST /login: Login the user.
 Body: {"email": "john@example.com", "password": "password123"}
+
 GET /products: List products with pagination.
 
 router.patch("/updateUser", updateUser);
